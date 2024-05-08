@@ -8,7 +8,7 @@ def create_account():
     hashed_password = hashlib.sha256(password.encode()).hexdigest()
     file = open("database.txt", "a")
     file.write(f"{username} : {hashed_password}\n")
-    print("Account created successfully!")
+    print("Account created successfully!") 
 
 
 def login():
